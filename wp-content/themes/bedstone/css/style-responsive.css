@@ -1,0 +1,636 @@
+/**
+ *     project responsive
+ */
+
+ /* =======================================================================
+   1199 - lower = lg
+======================================================================= */
+@media only screen and (max-width: 1199px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+
+    /* ----- Fixed Button ----- */
+    .btn--fixed-page {
+        display: none;
+    }
+
+    /* ----- Document Header ----- */
+    .document-header--home-page {
+        height: 500px;
+    }
+
+    /* ----- Home Hero Nav ----- */
+    .document-header__home-nav a {
+        font-size: 1.1em;
+    }
+
+    .location-map iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 1065px) {
+    .site-footer__sub-footer .copyright, .site-footer__social {float: none;}
+}
+
+
+/* =======================================================================
+   991 - lower = md
+======================================================================= */
+@media only screen and (max-width: 991px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+
+
+    /* ================= Elements ================= */
+
+    /* ----- Animate Headline ----- */
+    .home .container--animate-headline {
+        min-height: 4em;
+        padding: 0.7em 0 1.2em;
+    }
+
+    .cd-headline {
+        font-size: 2rem !important;
+    }
+
+    /* ----- Document Header ----- */
+    .document-header--home-page {
+        height: 450px;
+    }
+
+
+    /* ================= Sidebar ================= */
+    .sidebar {
+        padding-left: 0;
+        margin-top: 3em;
+    }
+
+
+    /* ================= Site Header ================= */
+    .logo {
+        max-width: 325px;
+    }
+
+    .header-utility .searchform {
+        width: 50px;
+    }
+
+    .header-utility .searchform form {
+        display: none;
+    }
+
+    .header-utility .icon-link {
+        position: relative;
+        top: 5px;
+    }
+
+    .btn--large {
+        font-size: 1em;
+    }
+
+    .btn--pill {
+        padding: .5em 1em;
+    }
+
+
+    /* ================= Main Nav ================= */
+    /* transition on bady for nav slide */
+    body {
+        transition: transform 0.3s;
+    }
+
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    /* js adds class to body on toggle click */
+    .nav-open {
+        -webkit-transform: translateX(-270px);
+        -moz-transform: translateX(-270px);
+        -ms-transform: translateX(-270px);
+        transform: translateX(-270px);
+    }
+
+    .nav-main {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 101;
+        display: block;
+        overflow-x: hidden;
+        width: 270px;
+        height: 100%;
+        margin: 0;
+        padding-top: 10px;
+        -webkit-transform: translateX(270px);
+        -moz-transform: translateX(270px);
+        -ms-transform: translateX(270px);
+        transform: translateX(270px);
+    }
+
+    .nav-main__list {
+        display: block;
+    }
+
+    .nav-main__list li a {
+        width: auto;
+        font-size: 1em;
+    }
+
+    .nav-main__list > li > a {
+        text-align: left;
+    }
+
+    .root-parent-10 .nav-main-item-10,
+    .root-parent-11 .nav-main-item-11,
+    .root-parent-12 .nav-main-item-12,
+    .root-parent-13 .nav-main-item-13,
+    .root-parent-14 .nav-main-item-14,
+    .nav-main__list > li > a:hover,
+    .nav-main__list > li > a:focus,
+    .nav-main__list > li > a:active {
+        background: none;
+    }
+
+
+    .nav-main__list > li > ul {
+        display: block;
+        position: static;
+        z-index: 9999;
+        min-width: 100%;
+        background: none;
+    }
+
+    .nav-main__list > li > ul li:hover {
+        background: none;
+    }
+
+    .nav-main__list > li > ul a {
+        white-space: normal;
+        font-size: 0.9em;
+    }
+
+    .searchform--mobile {
+        display: block;
+        margin-top: 1.5em;
+    }
+
+    .searchform .container--input,
+    .searchform input {
+        width: 100%;
+    }
+
+    .searchform input {
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.7);
+        border-left: none;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .searchform input:hover, .searchform input:focus,
+    .searchform input:active {
+        border-bottom: 1px solid rgba(255,255,255,0.7);
+        box-shadow: none;
+    }
+
+    .searchform input,
+    .searchform .container--input::after {
+        color: rgba(255,255,255,0.7);
+    }
+
+    /* style place holders */
+    .searchform input::-webkit-input-placeholder {
+        color: rgba(255,255,255,0.7);
+    }
+    .searchform input::-moz-placeholder {
+        color: rgba(255,255,255,0.7);
+    }
+    .searchform input:-ms-input-placeholder {
+        color: rgba(255,255,255,0.7);
+    }
+
+    /* ================= Site Footer ================= */
+
+    /* ----- Footer Contact Form ----- */
+    .site-footer .wpcf7-form > .wpcf7-form-control-wrap {
+        width: 48.9%;
+        margin-left: 1.5%;
+    }
+
+    .site-footer .wpcf7-form > .wpcf7-form-control-wrap:nth-of-type(2n+1) {
+        margin-left: 0;
+    }
+
+    .site-footer .wpcf7-form > .wpcf7-form-control-wrap.message {
+        width: 100%;
+    }
+
+
+    /* ----- Footer Info section ----- */
+    .site-footer__col {
+        margin-top: 2em;
+    }
+
+    .site-footer__col:first-of-type {
+        margin-top: 0;
+    }
+
+    .site-footer__info {
+        padding-top: 2em;
+    }
+
+    /* ----- Footer Subfooter ----- */
+    .site-footer__sub-footer .copyright,
+    .site-footer__social {
+        float: none;
+    }
+
+    .site-footer__sub-footer .copyright a:first-of-type {
+        margin-left: 0;
+    }
+
+    .site-footer__sub-footer .copyright a:first-of-type::before {
+        display: none;
+    }
+
+    .location-map iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .our-locations {
+        overflow: hidden;
+    }
+
+    .document-header--page {
+        margin-bottom: .5em;
+    }
+}
+
+
+
+
+
+/* =======================================================================
+   767 - lower = sm
+======================================================================= */
+@media only screen and (max-width: 767px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+    .dropdown-menu.bedstone-bootstrap-hover-dropdown { display: block; float: none; position: relative; }
+    .dropdown-menu {box-shadow: none; border: none;}
+
+    .home .container--col {
+        padding-bottom: 0;
+        padding-top: 2em;
+    }
+
+    /* ================= Elements ================= */
+    /* ----- Partial Rule ----- */
+    .partial-rule--center::after {
+        width: 30%;
+        margin-left: -15%;
+    }
+
+    /* ----- CTA Card ----- */
+    .cta-card {
+        margin-bottom: 2em;
+    }
+
+
+    /* ----- Animate Headline ----- */
+    .home .container--animate-headline {
+        min-height: 3em;
+    }
+
+    .cd-headline {
+        font-size: 1.5rem !important;
+    }
+
+    /* ----- Add Social Media to Mobile Nav ------*/
+    .mobile-social {
+        display: block;
+    }
+
+    .mobile-social {
+      font-size: 1.5em;
+      padding: 0.5em 0;
+    }
+
+    .mobile-social a {
+        padding-right: .325em;
+        color: #12a7da;
+    }
+
+    .mobile-social a {
+        text-decoration: none;
+    }
+
+
+    /* ----- Document Header ----- */
+    .document-header--home-page {
+        height: 250px;
+    }
+
+    .header-utility .searchform {
+        display: none;
+    }
+
+    .header-utility .icon-link {
+        display: none;
+    }
+
+    .header-utility .list--phone {
+        margin: 0 3em 1em 0;
+    }
+
+    .header-utility .list--phone li {
+        display: block;
+    }
+
+    .header-utility .list--phone a {
+        font-size: 1.3em;
+        border-left: none;
+    }
+
+    .btn--large {
+        font-size: .8em;
+    }
+
+
+    /* ----- Home Hero Nav ----- */
+    .flexbox .document-header__home-nav {
+        display: block;
+        bottom: 0;
+        left: -8px;
+        padding-top: 250px;
+    }
+
+    .document-header__home-nav {
+        position: relative;
+        width: 100%;
+    }
+
+    .flexbox .document-header__home-nav li:first-child {
+        margin-left: 0.6em;
+    }
+
+    .flexbox .document-header__home-nav li:last-child {
+        margin-right: 0.6em;
+    }
+
+    .flexbox .document-header__home-nav li {
+        display: inline;
+        width: 45%;
+        float: left;
+    }
+
+    .document-header__home-nav a {
+        font-size: 1em;
+        display: block;
+        background: #006db2;
+        color: #ffffff;
+    }
+
+    .container--animate-headline {
+        width: 100%;
+        clear: both;
+    }
+
+    .document-header__home-nav a::before, .document-header__home-nav a::after {
+        background: #ffffff;
+    }
+
+
+    /* ----- WYSIWYG Content ----- */
+    .content h2 {font-size: 1.6em;}
+
+    .content h3 {font-size: 1.3em;}
+
+    .content .callout {font-size: 1.17em;}
+
+    .content .call-to-action {font-size: 1.17em;}
+
+    .content blockquote {
+        padding: 7px 15px;
+        font-size: 1.15em;
+    }
+
+
+    /* ----- Page Content List ----- */
+    .list-article {
+        margin-top: 2em;
+    }
+
+    .list-article h1 {
+        font-size: 1.5em;
+    }
+
+    .list-article .call-to-action {
+        margin-top: 0.5em;
+        font-size: 1em;
+    }
+
+
+    /* ----- Document Header ----- */
+    .document-header h1 {
+        padding: 1.5em 0;
+        font-size: 1.7em;
+    }
+
+
+    /* ================= Site Footer ================= */
+    /* ----- Footer Contact Form ----- */
+    .site-footer__form-sec h3 {
+        font-size: 1.5em;
+    }
+
+
+    .site-footer .wpcf7-form > .wpcf7-form-control-wrap {
+        width: 48.9%;
+        margin-left: 1%;
+        margin-bottom: 1.2em;
+    }
+
+    .site-footer .wpcf7-form input[type="text"],
+    .site-footer .wpcf7-form input[type="tel"],
+    .site-footer .wpcf7-form input[type="email"],
+    .site-footer .wpcf7-form textarea {
+        padding: 0.5em 0.75em 0.3em;
+    }
+
+    /* ---- Sumbit Container ----- */
+    .site-footer .wpcf7-form .submit-container {
+        width: 160px;
+    }
+
+    .site-footer .wpcf7-form .btn-submit {
+        height: 80px;
+    }
+
+    .site-footer .wpcf7-form .btn-submit::after {
+        top: 0.1em;
+        font-size: 1.7em;
+    }
+
+    .attorney-detail {
+        padding-top: 1em;
+    }
+
+    .content img {
+        margin-bottom: 1em;
+    }
+
+    .our-locations .location {
+        background: transparent !important;
+        box-shadow: none;
+    }
+
+    .site-footer__sub-footer .copyright span {
+        display: block;
+    }
+
+}
+
+/* =======================================================================
+   595
+======================================================================= */
+@media only screen and (max-width: 595px) {
+
+    .logo {
+        width: 100%;
+    }
+
+    .header-utility {
+      clear: both;
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+      width: 350px;
+    }
+
+    .header-utility .list--phone {
+        margin: 0 0 1em;
+        display: none;
+    }
+
+    .header-utility .list--phone li {
+        display: inline-block;
+    }
+
+    .header-utility .list--phone a {
+        border-left: 1px solid #e3e3e3;
+    }
+
+    .btn--large {
+        font-size: 1em;
+    }
+
+    .flexbox .document-header__home-nav li {
+        width: 100%;
+    }
+
+    .flexbox .document-header__home-nav {
+        padding-top: 200px;
+    }
+
+    /* ----- Document Header ----- */
+    .document-header--home-page {
+        height: 200px;
+    }
+
+    .fixed-help {
+        top: 70%;
+    }
+
+}
+/* =======================================================================
+   480
+======================================================================= */
+@media only screen and (max-width: 480px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+
+    /* ----- Document Header ----- */
+    .document-header--home-page {
+        height: 180px;
+    }
+
+    .flexbox .document-header__home-nav {
+      padding-top: 180px;
+    }
+
+    /* ----- Animate Headline ----- */
+    .home .container--animate-headline {
+        min-height: 2em;
+        padding: 0.5em 0;
+    }
+
+    .cd-headline {
+        font-size: 1.2rem !important;
+    }
+
+    /* ----- Interior Title Banner Images ----- */
+    .document-header--page__bg-img {
+        background-image: none !important;
+    }
+
+    .header-utility {
+        width: 100%;
+    }
+
+    /* ================= Site Footer ================= */
+    /* ----- Footer Contact Form ----- */
+    .site-footer .wpcf7-form > .wpcf7-form-control-wrap {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    /* ----- Footer Subfooter ----- */
+    .site-footer__sub-footer .copyright {
+        font-size: 0.7em;
+    }
+
+    .site-footer__social {
+        margin-top: 1em;
+        font-size: 0.8em;
+    }
+
+
+    .site-footer__social__googleplus {
+        width: 21px;
+        height: 13px;
+        background-size: 21px 13px;
+    }
+
+    .location-map iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .header-utility .list--phone a {
+        border-left: none;
+    }
+
+    /* ----- Document Header ----- */
+    .document-header--home-page {
+        height: 150px;
+    }
+
+    .flexbox .document-header__home-nav {
+      padding-top: 150px;
+    }
+}

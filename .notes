@@ -1,0 +1,75 @@
+Hello. Project notes go here.
+
+
+WordPress Core Version
+==
+
+The major-version core for this project is: 4.2
+
+https://wordpress.org/download/release-archive/
+
+
+Downloading WordPress
+==
+
+1. Grab the zip you need for a fresh build.
+
+    1.a. Match the core version. Replace X.X with the core version for the project listed above.
+    curl -O https://wordpress.org/wordpress-X.X.zip
+
+    1.b. If you know that the project's major version is current, install the latest that includes minor patches.
+    curl -O https://wordpress.org/latest.zip
+
+2. Unzip the file you just downloaded
+unzip wordpress-X.X.zip
+
+3. Copy files using either the Mac (see 3.a.) or Linux (see 3.b.) command
+
+    3.a. For Mac OS X (BSD): Copy the unzipped WordPress files
+    cp -r wordpress/ ./
+
+    3.b. For Linux (GNU): Copy the unzipped WordPress files
+    cp -RT wordpress/ ./
+
+4. Remove the zip
+rm wordpress-X-X.zip
+
+5. Remove the unzipped /wordpress/ files
+rm -fr wordpress/
+
+
+Plugins
+==
+
+Official Plugin Name Here
+Official Plugin Download Link Here (to versioned .zip file)
+
+ACF Pro
+v 5.3.0
+
+CMS Tree Page View
+v 1.2.32
+
+Contact Form 7
+v 4.2.2
+
+Contact Form DB
+v 2.9.8
+
+No Update Nag
+v 1.4.1
+
+Animate Headline
+v 1.5
+
+
+
+===================
+srcset markup
+===================
+
+<img
+    srcset="path/image-2x.jpg 2x, path/image-1x.jpg 1x"
+    src="path/fallback-image.jpg"
+    alt="Alt text"
+>
